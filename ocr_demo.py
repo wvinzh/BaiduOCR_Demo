@@ -8,10 +8,9 @@ import json
 
 def ocr(img):
     res = ''
-    access_token = '24.3ba1ddc797c357524f5eb412720034fe.2592000.1544010929.282335-14654212'
+    access_token = '###your token####'
     url = 'https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic?access_token=' + access_token
     # 二进制方式打开图文件
-    # f = open(r'/home/zengh/Pictures/webwxgetmsgimg2.jpeg', 'rb')
     f = open(img, 'rb')
     # 参数image：图像base64编码
     img = base64.b64encode(f.read())
